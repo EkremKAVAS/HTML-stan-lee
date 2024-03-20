@@ -7,7 +7,8 @@ function App() {
   const dogruMu = false;
   const url ="https://picsum.photos/250/250"
   return (
-    <>
+    <> 
+    {/* fragment */}
     <div>
       {" "}
       <h1>ad,soyadı :{nameSurname}</h1>
