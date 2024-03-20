@@ -13,7 +13,7 @@ function App() {
       <h1>ad,soyadı :{nameSurname}</h1>
       <p>ekrem</p>
       <p>{students}</p>
-      {/* değişkenın değeri için süslü prantez  */}
+      {/* değişkenın değeri için süslü parantez  */}
       <input type="text"/>
       <input type="date"/>
       {dogruMu ? students : <p>false değerinini yazdı</p>}
