@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <h1>APP</h1>
-      {/* Header comp invoke edidi */}
+      {/* Header comp invoke edidi parent-child mantığında işlendi */}
       <Header />
       <Main />
       <Footer />
