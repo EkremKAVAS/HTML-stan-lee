@@ -13,6 +13,7 @@
 //*CSS harici olanları importladık
 import "./Main.css"
 import kediImage from "./images/kedi.jpeg"
+//dosya yolu ile ulaşmak istersem resme importlaman gerekir
 
 const Main = () => {
   //! JS return yukarısı JS ALANI
