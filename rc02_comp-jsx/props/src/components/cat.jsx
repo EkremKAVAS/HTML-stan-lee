@@ -1,21 +1,39 @@
-//!COMPANENTLER
+//* React importu artık zorunlu değil
+// import React from "react";
 
-import { Name } from "../nameComp/Name";
-//named exportun yazım seklı süslü içinde Aynı isimle kullanılır
+//? named exportun importu, süslü içinde ve aynı isimle import edilmeli
+import { Name } from "./Name";
 
-const Cat = () => {
+//? componentler function dec. veya arrow func. ile oluşturulabilir
+const Cat = ({ name, img, color = "grey", isBlueEyed }) => {
+  //? destr.
+  //   const { name, img, color } = props;
+  console.log(isBlueEyed);
   return (
-    //*mutlaka kapsayıcı parent elemente sahıp olmalı
+    //* JSX ifadeleri birden fazla ise mutlaka bir parent ile sarmalanmalıdır
     <div>
-        <Name/>
-      <img
-        src="https://pixabay.com/tr/photos/kedi-kedi-yavrusu-a%C4%9Fa%C3%A7-merakl%C4%B1-1647775/"
-        alt="" height="300px"  widht ="250px"
-      />
-      <p>Color:</p>
+      <Name name={name} />
+      {/* //* JSX içinde if/else kullanılamaz, ternary kullanılabilir */}
+      <p>Blue eyed? : {isBlueEyed ? "Yes" : "No"} </p>
+      <img src={img} alt="cat-img" height="300px" />
+      <p style={{ backgroundColor: color }}>Color: {color} </p>
       <hr />
     </div>
   );
 };
 
-export default Cat; //export yaparak kapıyı açtık ıstedıgımız yerde kullanabılırız
+export default Cat;
+
+// const Cat = (props) => {
+//   return (
+//     //* JSX ifadeleri birden fazla ise mutlaka bir parent ile sarmalanmalıdır
+//     <div>
+//       <Name />
+//       <img src={props.img} alt="cat-img" height="300px" />
+//       <p style={{ backgroundColor: props.color }}>Color: {props.color} </p>
+//       <hr />
+//     </div>
+//   );
+// };
+
+// export default Cat;

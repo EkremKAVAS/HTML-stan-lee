@@ -15,4 +15,3 @@ function Header() {
   )
 }
 export default Header
-// export etmezsen gözükmez ana dosya parentte import etmen gerek

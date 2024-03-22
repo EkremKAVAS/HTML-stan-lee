@@ -9,17 +9,14 @@
 //* class isimleri icin className kullanilir.
 //* Module CSS, Material UI, Styled Component, Sass, Bootstrap, Tailwind, Emotion, Ant Design v.b harici kutuphaneler kullanilabilir.
 
-//! CSS dosyalari import "path" seklinde eklenir.
-//*CSS harici olanları importladık
+//? CSS dosyalari import "path" seklinde eklenir.
 import "./Main.css"
 import kediImage from "./images/kedi.jpeg"
-//dosya yolu ile ulaşmak istersem resme importlaman gerekir
 
 const Main = () => {
-  //! JS return yukarısı JS ALANI
+  //! JS
 
-  //* local ve global style degiskeni
-
+  //? local ve global style degiskeni
   const headerStyle = {
     color: "hotpink",
     backgroundColor: "lightgray",
@@ -29,8 +26,8 @@ const Main = () => {
 
   return (
     <main>
-      {/* return aşağısı JSX alanı*/}
-      {/* Inline CSS, (key-value), notasyon olarak camelCase obje olduğu için burdakı style alanı çift süslü kullanılır */}
+      {/* JSX */}
+      {/* Inline CSS, (key-value), notasyon olarak camelCase */}
       <h2 style={{ color: "red", backgroundColor: "gray" }}>MAIN SECTION</h2>
 
       <h3 style={headerStyle}>Other header</h3>

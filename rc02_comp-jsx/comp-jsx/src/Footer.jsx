@@ -3,6 +3,3 @@ const Footer = () => {
 }
 
 export default Footer
-
-
-// rfc ,rafce arrow func açar ,yazar enter dersen otm oluşturur
