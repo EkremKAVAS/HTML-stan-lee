@@ -1,3 +1,6 @@
+import Cat from "./components/cat"
+//companetes cat içine gir ordan export edilmiş Cat i import et
+
 //? Component
 function App() {
   //? JS kodu
@@ -6,8 +9,8 @@ function App() {
   return (
     //! JSX (HTML- JS'nin birleşmiş hali)
     <div className="App">
-      <h2 style={{ color: "red" }}>Hoşgeldin Ya Şehri React</h2>
-      <p className="par">{deneme}</p>
+      <Cat/>
+     
     </div>
   )
 }
