@@ -1,4 +1,5 @@
 import Button from "react-bootstrap/Button"
+//react import için bootstrap
 import Form from "react-bootstrap/Form"
 import { useState } from "react"
 
@@ -42,7 +43,7 @@ function Forms() {
     <Form onSubmit={handleSubmit}>
       <h1 className="text-danger">FORMS</h1>
       <Form.Group className="mb-3">
-        {/* Short circuit veya ternary ile kosullu rendering yapılabilir. */}
+        {/* Short circuit veya ternary ile kosullu rendering yapılabilir.JSX ALANINDA JS kullanmak için süslğü açılır */}
         <Form.Label>{username && <span>Hello {username}</span>}</Form.Label>
         <Form.Control
           type="text"
