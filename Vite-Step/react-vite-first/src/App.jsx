@@ -4,14 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  let a = 15 ;
 
   return (
     <>
     <div className="App">
       Can
     </div>
-    
+    <p>a değişkenin değerine ulaşmak istersen js alaındaki süslü parantez içinde yaz </p>
+    <p>a değişken değeri : {a} </p>
         
     </>
   )

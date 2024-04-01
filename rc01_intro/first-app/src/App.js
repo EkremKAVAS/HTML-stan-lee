@@ -14,3 +14,4 @@ function App() {
 }
 
 export default App
+// bir companentin başka bir yede kullanılması için export etmeniz gereki çağırmak için de import
