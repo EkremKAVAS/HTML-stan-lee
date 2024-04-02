@@ -1,5 +1,6 @@
 
 
+<<<<<<< HEAD
 
 function Product({productName, price}) {
    
@@ -21,3 +22,10 @@ function Product({productName, price}) {
 }
 
 export default Product;
+=======
+function Product(){
+    return(
+        <div>Product</div>
+    )
+}
+>>>>>>> 1f2a4083ab59aa4f2b1bd50ddfc238d76e0f3c65
